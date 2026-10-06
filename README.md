@@ -1,5 +1,7 @@
 # Geospatial File Measurement API
 
+Public repository: [project-code1cr/geospatial-measurement-api](https://github.com/project-code1cr/geospatial-measurement-api).
+
 A FastAPI backend that accepts a zipped Shapefile or KML, preserves feature geometry and attributes, and calculates polygon area and line length in a suitable projected coordinate system. SQLite keeps processed results available across restarts.
 
 ## Setup
@@ -244,14 +246,11 @@ This submission has no authentication and is intended for local evaluation. Befo
 
 ## GitHub submission
 
-Once signed in to the GitHub CLI, publish the project from this directory:
+Public source repository: [https://github.com/project-code1cr/geospatial-measurement-api](https://github.com/project-code1cr/geospatial-measurement-api).
+
+Clone it, then follow the setup instructions above:
 
 ```bash
-git init
-git add .
-git commit -m "Build geospatial file measurement API"
-gh repo create geospatial-measurement-api --public --source=. --remote=origin --push
-gh repo view --json url --jq .url
+git clone https://github.com/project-code1cr/geospatial-measurement-api.git
+cd geospatial-measurement-api
 ```
-
-If this checkout already contains the initial commit, omit the first three commands. Share the actual URL returned by GitHub; no placeholder repository link is presented as a published submission.
